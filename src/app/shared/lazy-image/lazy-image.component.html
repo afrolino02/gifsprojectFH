@@ -1,0 +1,4 @@
+<div class="card mb-2 text-centert bg-dark text-center">
+  <img  [src]="url" [alt]="alt" class="card-img-top animate__animated animate__fadeIn" (load)="onLoad()" [ngStyle]="{display: hasLoad ? '': 'none'}" />
+  <img src="../../../assets/loader.svg" alt="" *ngIf="!hasLoad" />
+</div>
